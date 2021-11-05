@@ -1,0 +1,11 @@
+{{ define "main" }}
+    {{ $paginator := .Paginate .Pages }}
+    {{ .Scratch.Set "pagenumber" .Paginator.PageNumber }}
+    {{ if eq .Paginator.PageNumber 1 }}
+    {{ else }}
+        <h3 class="inline current-page">Page {{.Paginator.PageNumber}}</h3>
+    {{ end }}
+
+    {{- partial "listcontent.html" . -}}
+    {{- partial "pagination.html" . -}}
+{{ end }}

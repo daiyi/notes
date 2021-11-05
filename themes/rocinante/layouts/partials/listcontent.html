@@ -1,0 +1,43 @@
+{{ range .Paginator.Pages }}
+<article class="post-list">
+    <div class="title-group">
+        <div class="title">
+            <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+        </div>
+    </div class="title-group">
+
+    {{ $permalink := .RelPermalink }}
+    <div class="content">
+        {{ if (eq .Type "photos") }}
+        <div class="photos">
+            {{ range .Resources }}
+                {{ $image := .Resize "500x q100" }}
+                <a href="{{$permalink}}">
+                    <img src="{{$image.RelPermalink}}" alt="">
+                </a>
+            {{ end }}
+        </div>
+        {{ end }}
+        {{ .Content }}
+        <div class="album title-group">
+            <div class="date">
+                <h5>
+                    <a href="{{ .RelPermalink }}">
+                        <time datetime={{.Date.Format "2006-01-02" }}>
+                            {{ .Date.Format "2006-01-02" }}
+                        </time>
+                    </a>
+                </h5>
+            </div>
+            {{ with .Params.tags }}
+                <span class="tags">
+                    <span class="horizontal-links links">
+                        {{ range . }}{{ with $.Site.GetPage (printf "/tags/%s" ( . | urlize)) }}<a href="{{ .RelPermalink }}"># {{ .Title }}</a>{{ end }}{{ end }}
+                    </span>
+                </span>
+            {{ end }}
+        </div>
+    </div>
+
+</article>
+{{ end }}
