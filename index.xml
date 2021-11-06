@@ -6,7 +6,16 @@
     <description>Recent content on lifespeed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Nov 2021 06:58:03 +0000</lastBuildDate><atom:link href="https://www.daiyi.co/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Nov 2021 06:58:10 +0000</lastBuildDate><atom:link href="https://www.daiyi.co/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://www.daiyi.co/notes/notes/1636181891/</link>
+      <pubDate>Sat, 06 Nov 2021 06:58:10 +0000</pubDate>
+      
+      <guid>https://www.daiyi.co/notes/notes/1636181891/</guid>
+      <description>Micropub test of creating an h-entry with a JSON request</description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://www.daiyi.co/notes/notes/1636181883/</link>
