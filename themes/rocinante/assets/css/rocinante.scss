@@ -143,6 +143,10 @@ video {
   height: auto;
   border-radius: 3px;
 }
+
+.border {
+  border: 1px solid var(--border);
+}
 figure {
   width: 100%;
   margin: 2em 0;
