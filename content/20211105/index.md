@@ -1,6 +1,7 @@
 ---
 title: "Joining the dark [mode] side"
 date: 2021-11-05T18:05:53-07:00
+type: posts
 tags:
   - web dev
   - computer stuff

@@ -3,7 +3,6 @@ title: ""
 date: 2021-11-04T00:09:35-07:00
 tags:
   - dingo
-type: photos
 _build:
   publishResources: false
 ---
