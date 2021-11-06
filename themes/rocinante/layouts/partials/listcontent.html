@@ -8,7 +8,7 @@
 
     {{ $permalink := .RelPermalink }}
     <div class="content">
-        {{ if (eq .Type "photos") }}
+        {{ if (not (eq .Type "posts")) }}
         <div class="photos">
             {{ range .Resources }}
                 {{ $image := .Resize "500x q100" }}
